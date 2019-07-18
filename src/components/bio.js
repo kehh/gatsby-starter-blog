@@ -16,7 +16,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 100, height: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -54,11 +54,11 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in Perth, Western Australia at Gaia Resources building useful things.
+        Written by <strong>{author}</strong> who lives in Roleystone and works in Perth, Western Australia at <a href={`www.gaiaresources.com.au`}>Gaia Resources</a> building useful things.
         {` `}
         <a href={`https://twitter.com/${social.twitter}`}>
           You should follow him on Twitter
-        </a>
+        </a>.
       </p>
     </div>
   )
