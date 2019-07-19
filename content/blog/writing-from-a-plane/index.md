@@ -35,7 +35,8 @@ git pull origin dev
 # Write some content
 git add content/blog/writing-from-a-plane
 git commit -m 'Basic article skeleton for wiring on a plane blog post'
-git push origin dev
+# this part I obviously can't do from the plane so will wait till I've got a data connection to do this and all the following steps.
+git push origin dev 
 ```
 Wait a couple of minutes till I get an email from amplify stating that the content is now live on the [dev version of this site](https://dev.kehan.kim) .
 
@@ -48,4 +49,4 @@ git pull origin dev
 git push #-u origin master
 ```
 
-Finally wait for the email saying the new versino of the site is now successfully deployed.
+Finally wait for the email saying the new version of the site is now successfully deployed.
